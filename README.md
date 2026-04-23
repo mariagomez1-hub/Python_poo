@@ -45,3 +45,38 @@ class NombreClase:
 - Puedes definir tantos atributos como necesites.
 - Puedes definir tantos metodos como necesites.
 - Puedes definir tantos parametros en el constructor y en los metodos como necesites.
+
+## Ejemplo 1
+
+- Crear una clase que represente una persona.
+- Atributos: nombre, apellidos y edad.
+- Metodos: mostrar la informacion de la persona.
+
+### Codigo
+
+```Python
+class Persona:
+
+    # Metodo constructor de la clase
+    def__init__(self, nombre, apellidos, edad):
+        self.nombre = nombre
+        self.apellidos = apellidos
+        self.edad = edad
+
+    # Metodo para mostrar la informacion 
+    def mostrarPersona(self):
+        print("Nombre: ", self.nombre)
+        print("Apellidos : ", self.apellidos)
+        prinr("Edad: ", self.edad)
+
+def main():
+    print("vamoss a aprender POO...")
+    persona_1 = Persona("Lorenzo", "Perez", "18")
+    persona_1.mostrarPersona() 
+
+if __name__ == main():
+    main()
+```
+## Representacion en RAM del objeto creado
+
+![Objeto RAM](img/objetoRAM.png "Objeto RAM")
