@@ -58,7 +58,30 @@ class Alumno(Persona):
         print("\tMatrículas: ", self.__Asignaturas)
 
 class Profesor(Persona):
-    pass
+    def __init__(self):
+        self.__Departamento = ""
+        self.__Asignaturas = ""
+
+    def getDepartamento(self):
+        return self.__Departamento
+    
+    def setDepartamento(self, departamento):
+        self.__Departamento = departamento
+
+    def getAsignaturas(self):
+        return self.__Asignaturas
+    
+    def setAsignaturas(self, asignaturas):
+        self.__Asignaturas = asignaturas
+
+    def mostrarProfesor(self):
+        print("Profesor")
+        print("\tNombre: ", self.getNombre())
+        print("\tApellidos: ", self.getApellidos())
+        print("\tEdad: ", self.getEdad())
+        print("\tDepartamento: ", self.__Departamento)
+        print("\tMatrículas: ", self.__Asignaturas)
+
 
 # metodo principal
 def main():
